@@ -205,7 +205,7 @@ export default function AdminPage() {
         {/* Lead quality */}
         <div className="rounded-2xl p-4 bg-white">
           <p className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: '#94A3B8' }}>Lead Quality</p>
-          <div className="flex gap-3">
+          <div className="flex gap-3 mb-4">
             {(['HOT', 'WARM', 'COLD'] as const).map((q) => (
               <div key={q} className="flex-1 rounded-xl p-3 text-center" style={{ background: `${QUALITY_COLOR[q]}18` }}>
                 <p className="text-2xl font-black" style={{ color: QUALITY_COLOR[q] }}>
@@ -214,6 +214,22 @@ export default function AdminPage() {
                 <p className="text-xs font-bold mt-0.5" style={{ color: QUALITY_COLOR[q] }}>{q}</p>
               </div>
             ))}
+          </div>
+          {/* Criteria legend */}
+          <div className="rounded-xl p-3 flex flex-col gap-2" style={{ background: '#F8FAFC' }}>
+            <p className="text-xs font-bold uppercase tracking-wider mb-1" style={{ color: '#94A3B8' }}>Kriteria</p>
+            <div className="flex items-start gap-2">
+              <span className="text-xs font-black px-1.5 py-0.5 rounded flex-shrink-0" style={{ background: '#EF444418', color: '#EF4444' }}>HOT</span>
+              <p className="text-xs leading-snug" style={{ color: '#475569' }}>Punya mobil + niat trade-in / cari rekomendasi + income ≥ Rp 10 jt</p>
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="text-xs font-black px-1.5 py-0.5 rounded flex-shrink-0" style={{ background: '#F9731618', color: '#F97316' }}>WARM</span>
+              <p className="text-xs leading-snug" style={{ color: '#475569' }}>Punya mobil ATAU income ≥ Rp 10 jt (salah satu)</p>
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="text-xs font-black px-1.5 py-0.5 rounded flex-shrink-0" style={{ background: '#6B728018', color: '#6B7280' }}>COLD</span>
+              <p className="text-xs leading-snug" style={{ color: '#475569' }}>Tidak punya mobil + income &lt; Rp 10 jt</p>
+            </div>
           </div>
         </div>
 
