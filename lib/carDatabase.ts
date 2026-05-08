@@ -453,6 +453,422 @@ export const carDatabase: CarEntry[] = [
   { brand: 'Wuling', model: 'Air EV', year: 2024, otrPrice: 248_000_000 },
   { brand: 'Wuling', model: 'Air EV', year: 2023, otrPrice: 238_000_000 },
   { brand: 'Wuling', model: 'Air EV', year: 2022, otrPrice: 228_000_000 },
+
+  // ── ISUZU ──────────────────────────────────────────────────────
+  { brand: 'Isuzu', model: 'D-Max', year: 2024, otrPrice: 524_000_000 },
+  { brand: 'Isuzu', model: 'D-Max', year: 2023, otrPrice: 499_000_000 },
+  { brand: 'Isuzu', model: 'D-Max', year: 2022, otrPrice: 475_000_000 },
+  { brand: 'Isuzu', model: 'D-Max', year: 2021, otrPrice: 450_000_000 },
+  { brand: 'Isuzu', model: 'D-Max', year: 2020, otrPrice: 430_000_000 },
+  { brand: 'Isuzu', model: 'D-Max', year: 2019, otrPrice: 410_000_000 },
+
+  { brand: 'Isuzu', model: 'mu-X', year: 2024, otrPrice: 658_000_000 },
+  { brand: 'Isuzu', model: 'mu-X', year: 2023, otrPrice: 630_000_000 },
+  { brand: 'Isuzu', model: 'mu-X', year: 2022, otrPrice: 600_000_000 },
+  { brand: 'Isuzu', model: 'mu-X', year: 2021, otrPrice: 570_000_000 },
+  { brand: 'Isuzu', model: 'mu-X', year: 2020, otrPrice: 545_000_000 },
+  { brand: 'Isuzu', model: 'mu-X', year: 2019, otrPrice: 520_000_000 },
+  { brand: 'Isuzu', model: 'mu-X', year: 2018, otrPrice: 495_000_000 },
+
+  // ── SUBARU ─────────────────────────────────────────────────────
+  { brand: 'Subaru', model: 'Forester', year: 2025, otrPrice: 735_500_000 },
+  { brand: 'Subaru', model: 'Forester', year: 2024, otrPrice: 710_000_000 },
+  { brand: 'Subaru', model: 'Forester', year: 2023, otrPrice: 688_000_000 },
+  { brand: 'Subaru', model: 'Forester', year: 2022, otrPrice: 655_000_000 },
+  { brand: 'Subaru', model: 'Forester', year: 2020, otrPrice: 610_000_000 },
+  { brand: 'Subaru', model: 'Forester', year: 2019, otrPrice: 580_000_000 },
+
+  { brand: 'Subaru', model: 'Outback', year: 2025, otrPrice: 844_500_000 },
+  { brand: 'Subaru', model: 'Outback', year: 2024, otrPrice: 820_000_000 },
+  { brand: 'Subaru', model: 'Outback', year: 2023, otrPrice: 795_000_000 },
+  { brand: 'Subaru', model: 'Outback', year: 2022, otrPrice: 770_000_000 },
+
+  { brand: 'Subaru', model: 'WRX', year: 2024, otrPrice: 994_500_000 },
+  { brand: 'Subaru', model: 'WRX', year: 2023, otrPrice: 960_000_000 },
+  { brand: 'Subaru', model: 'WRX', year: 2022, otrPrice: 910_000_000 },
+  { brand: 'Subaru', model: 'WRX', year: 2020, otrPrice: 860_000_000 },
+
+  // ── FORD ───────────────────────────────────────────────────────
+  { brand: 'Ford', model: 'Ranger', year: 2025, otrPrice: 860_000_000 },
+  { brand: 'Ford', model: 'Ranger', year: 2024, otrPrice: 810_000_000 },
+  { brand: 'Ford', model: 'Ranger', year: 2023, otrPrice: 760_000_000 },
+  { brand: 'Ford', model: 'Ranger', year: 2022, otrPrice: 710_000_000 },
+
+  { brand: 'Ford', model: 'Everest', year: 2025, otrPrice: 1_057_000_000 },
+  { brand: 'Ford', model: 'Everest', year: 2024, otrPrice: 980_000_000 },
+  { brand: 'Ford', model: 'Everest', year: 2023, otrPrice: 920_000_000 },
+  { brand: 'Ford', model: 'Everest', year: 2022, otrPrice: 870_000_000 },
+
+  { brand: 'Ford', model: 'Mustang', year: 2024, otrPrice: 1_964_000_000 },
+  { brand: 'Ford', model: 'Mustang', year: 2023, otrPrice: 1_880_000_000 },
+
+  // ── MG ─────────────────────────────────────────────────────────
+  { brand: 'MG', model: 'MG 3', year: 2024, otrPrice: 203_040_000 },
+  { brand: 'MG', model: 'MG 3', year: 2023, otrPrice: 195_000_000 },
+
+  { brand: 'MG', model: 'ZS', year: 2025, otrPrice: 359_500_000 },
+  { brand: 'MG', model: 'ZS', year: 2024, otrPrice: 340_000_000 },
+  { brand: 'MG', model: 'ZS', year: 2023, otrPrice: 315_800_000 },
+  { brand: 'MG', model: 'ZS', year: 2022, otrPrice: 295_000_000 },
+  { brand: 'MG', model: 'ZS', year: 2021, otrPrice: 278_000_000 },
+
+  { brand: 'MG', model: 'ZS EV', year: 2025, otrPrice: 417_500_000 },
+  { brand: 'MG', model: 'ZS EV', year: 2024, otrPrice: 395_000_000 },
+  { brand: 'MG', model: 'ZS EV', year: 2023, otrPrice: 376_000_000 },
+  { brand: 'MG', model: 'ZS EV', year: 2022, otrPrice: 355_000_000 },
+
+  { brand: 'MG', model: 'VS HEV', year: 2025, otrPrice: 392_900_000 },
+  { brand: 'MG', model: 'VS HEV', year: 2024, otrPrice: 375_000_000 },
+
+  { brand: 'MG', model: 'HS', year: 2025, otrPrice: 558_800_000 },
+  { brand: 'MG', model: 'HS', year: 2024, otrPrice: 520_000_000 },
+  { brand: 'MG', model: 'HS', year: 2023, otrPrice: 460_800_000 },
+  { brand: 'MG', model: 'HS', year: 2022, otrPrice: 430_000_000 },
+
+  { brand: 'MG', model: 'MG 4 EV', year: 2025, otrPrice: 398_000_000 },
+  { brand: 'MG', model: 'MG 4 EV', year: 2024, otrPrice: 380_000_000 },
+
+  { brand: 'MG', model: 'MG 5', year: 2024, otrPrice: 330_000_000 },
+  { brand: 'MG', model: 'MG 5', year: 2023, otrPrice: 310_000_000 },
+
+  // ── KIA ────────────────────────────────────────────────────────
+  { brand: 'KIA', model: 'Sonet', year: 2025, otrPrice: 240_000_000 },
+  { brand: 'KIA', model: 'Sonet', year: 2024, otrPrice: 225_000_000 },
+  { brand: 'KIA', model: 'Sonet', year: 2023, otrPrice: 210_000_000 },
+  { brand: 'KIA', model: 'Sonet', year: 2022, otrPrice: 193_000_000 },
+
+  { brand: 'KIA', model: 'Seltos', year: 2025, otrPrice: 525_000_000 },
+  { brand: 'KIA', model: 'Seltos', year: 2024, otrPrice: 498_000_000 },
+  { brand: 'KIA', model: 'Seltos', year: 2023, otrPrice: 465_000_000 },
+  { brand: 'KIA', model: 'Seltos', year: 2022, otrPrice: 425_000_000 },
+  { brand: 'KIA', model: 'Seltos', year: 2021, otrPrice: 395_000_000 },
+
+  { brand: 'KIA', model: 'Carnival', year: 2025, otrPrice: 1_160_000_000 },
+  { brand: 'KIA', model: 'Carnival', year: 2024, otrPrice: 1_080_000_000 },
+  { brand: 'KIA', model: 'Carnival', year: 2023, otrPrice: 960_000_000 },
+  { brand: 'KIA', model: 'Carnival', year: 2022, otrPrice: 895_000_000 },
+  { brand: 'KIA', model: 'Carnival', year: 2021, otrPrice: 830_000_000 },
+
+  { brand: 'KIA', model: 'EV6', year: 2025, otrPrice: 1_349_000_000 },
+  { brand: 'KIA', model: 'EV6', year: 2024, otrPrice: 1_280_000_000 },
+  { brand: 'KIA', model: 'EV6', year: 2023, otrPrice: 1_199_000_000 },
+
+  { brand: 'KIA', model: 'EV9', year: 2025, otrPrice: 1_980_000_000 },
+  { brand: 'KIA', model: 'EV9', year: 2024, otrPrice: 1_820_000_000 },
+
+  // ── MERCEDES-BENZ ──────────────────────────────────────────────
+  { brand: 'Mercedes-Benz', model: 'A-Class', year: 2024, otrPrice: 1_030_000_000 },
+  { brand: 'Mercedes-Benz', model: 'A-Class', year: 2023, otrPrice: 980_000_000 },
+  { brand: 'Mercedes-Benz', model: 'A-Class', year: 2022, otrPrice: 930_000_000 },
+  { brand: 'Mercedes-Benz', model: 'A-Class', year: 2021, otrPrice: 885_000_000 },
+
+  { brand: 'Mercedes-Benz', model: 'C-Class', year: 2025, otrPrice: 1_790_000_000 },
+  { brand: 'Mercedes-Benz', model: 'C-Class', year: 2024, otrPrice: 1_650_000_000 },
+  { brand: 'Mercedes-Benz', model: 'C-Class', year: 2023, otrPrice: 1_490_000_000 },
+  { brand: 'Mercedes-Benz', model: 'C-Class', year: 2022, otrPrice: 1_350_000_000 },
+  { brand: 'Mercedes-Benz', model: 'C-Class', year: 2021, otrPrice: 1_250_000_000 },
+  { brand: 'Mercedes-Benz', model: 'C-Class', year: 2020, otrPrice: 1_150_000_000 },
+  { brand: 'Mercedes-Benz', model: 'C-Class', year: 2019, otrPrice: 1_050_000_000 },
+
+  { brand: 'Mercedes-Benz', model: 'E-Class', year: 2025, otrPrice: 1_830_000_000 },
+  { brand: 'Mercedes-Benz', model: 'E-Class', year: 2024, otrPrice: 1_720_000_000 },
+  { brand: 'Mercedes-Benz', model: 'E-Class', year: 2023, otrPrice: 1_600_000_000 },
+  { brand: 'Mercedes-Benz', model: 'E-Class', year: 2022, otrPrice: 1_480_000_000 },
+  { brand: 'Mercedes-Benz', model: 'E-Class', year: 2020, otrPrice: 1_350_000_000 },
+  { brand: 'Mercedes-Benz', model: 'E-Class', year: 2019, otrPrice: 1_250_000_000 },
+
+  { brand: 'Mercedes-Benz', model: 'S-Class', year: 2024, otrPrice: 4_200_000_000 },
+  { brand: 'Mercedes-Benz', model: 'S-Class', year: 2023, otrPrice: 3_800_000_000 },
+  { brand: 'Mercedes-Benz', model: 'S-Class', year: 2022, otrPrice: 3_500_000_000 },
+  { brand: 'Mercedes-Benz', model: 'S-Class', year: 2021, otrPrice: 3_200_000_000 },
+  { brand: 'Mercedes-Benz', model: 'S-Class', year: 2020, otrPrice: 2_950_000_000 },
+
+  { brand: 'Mercedes-Benz', model: 'GLA', year: 2025, otrPrice: 1_150_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLA', year: 2024, otrPrice: 1_080_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLA', year: 2023, otrPrice: 1_010_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLA', year: 2022, otrPrice: 940_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLA', year: 2021, otrPrice: 870_000_000 },
+
+  { brand: 'Mercedes-Benz', model: 'GLB', year: 2025, otrPrice: 1_290_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLB', year: 2024, otrPrice: 1_200_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLB', year: 2023, otrPrice: 1_120_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLB', year: 2022, otrPrice: 1_050_000_000 },
+
+  { brand: 'Mercedes-Benz', model: 'GLC', year: 2025, otrPrice: 2_750_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLC', year: 2024, otrPrice: 2_400_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLC', year: 2023, otrPrice: 2_100_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLC', year: 2022, otrPrice: 1_900_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLC', year: 2021, otrPrice: 1_740_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLC', year: 2020, otrPrice: 1_600_000_000 },
+
+  { brand: 'Mercedes-Benz', model: 'GLE', year: 2025, otrPrice: 3_550_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLE', year: 2024, otrPrice: 3_200_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLE', year: 2023, otrPrice: 2_900_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLE', year: 2022, otrPrice: 2_600_000_000 },
+
+  { brand: 'Mercedes-Benz', model: 'GLS', year: 2024, otrPrice: 2_785_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLS', year: 2023, otrPrice: 2_600_000_000 },
+  { brand: 'Mercedes-Benz', model: 'GLS', year: 2022, otrPrice: 2_450_000_000 },
+
+  { brand: 'Mercedes-Benz', model: 'EQA', year: 2025, otrPrice: 1_570_000_000 },
+  { brand: 'Mercedes-Benz', model: 'EQA', year: 2024, otrPrice: 1_490_000_000 },
+  { brand: 'Mercedes-Benz', model: 'EQA', year: 2023, otrPrice: 1_400_000_000 },
+
+  { brand: 'Mercedes-Benz', model: 'EQB', year: 2025, otrPrice: 1_720_000_000 },
+  { brand: 'Mercedes-Benz', model: 'EQB', year: 2024, otrPrice: 1_620_000_000 },
+
+  { brand: 'Mercedes-Benz', model: 'EQE', year: 2024, otrPrice: 2_330_000_000 },
+  { brand: 'Mercedes-Benz', model: 'EQE', year: 2023, otrPrice: 2_200_000_000 },
+
+  { brand: 'Mercedes-Benz', model: 'EQS', year: 2024, otrPrice: 3_540_000_000 },
+  { brand: 'Mercedes-Benz', model: 'EQS', year: 2023, otrPrice: 3_200_000_000 },
+
+  { brand: 'Mercedes-Benz', model: 'Maybach GLS 600', year: 2024, otrPrice: 9_600_000_000 },
+  { brand: 'Mercedes-Benz', model: 'Maybach GLS 600', year: 2023, otrPrice: 9_000_000_000 },
+
+  // ── BMW ────────────────────────────────────────────────────────
+  { brand: 'BMW', model: '3 Series', year: 2025, otrPrice: 1_315_000_000 },
+  { brand: 'BMW', model: '3 Series', year: 2024, otrPrice: 1_250_000_000 },
+  { brand: 'BMW', model: '3 Series', year: 2023, otrPrice: 1_180_000_000 },
+  { brand: 'BMW', model: '3 Series', year: 2022, otrPrice: 1_100_000_000 },
+  { brand: 'BMW', model: '3 Series', year: 2021, otrPrice: 1_020_000_000 },
+  { brand: 'BMW', model: '3 Series', year: 2020, otrPrice: 960_000_000 },
+  { brand: 'BMW', model: '3 Series', year: 2019, otrPrice: 895_000_000 },
+
+  { brand: 'BMW', model: '5 Series', year: 2025, otrPrice: 1_490_000_000 },
+  { brand: 'BMW', model: '5 Series', year: 2024, otrPrice: 1_420_000_000 },
+  { brand: 'BMW', model: '5 Series', year: 2023, otrPrice: 1_347_000_000 },
+  { brand: 'BMW', model: '5 Series', year: 2022, otrPrice: 1_250_000_000 },
+  { brand: 'BMW', model: '5 Series', year: 2021, otrPrice: 1_160_000_000 },
+  { brand: 'BMW', model: '5 Series', year: 2020, otrPrice: 1_080_000_000 },
+  { brand: 'BMW', model: '5 Series', year: 2019, otrPrice: 1_010_000_000 },
+
+  { brand: 'BMW', model: '7 Series', year: 2024, otrPrice: 2_714_000_000 },
+  { brand: 'BMW', model: '7 Series', year: 2023, otrPrice: 2_550_000_000 },
+  { brand: 'BMW', model: '7 Series', year: 2022, otrPrice: 2_380_000_000 },
+
+  { brand: 'BMW', model: 'X1', year: 2025, otrPrice: 980_000_000 },
+  { brand: 'BMW', model: 'X1', year: 2024, otrPrice: 927_000_000 },
+  { brand: 'BMW', model: 'X1', year: 2023, otrPrice: 880_000_000 },
+  { brand: 'BMW', model: 'X1', year: 2022, otrPrice: 830_000_000 },
+  { brand: 'BMW', model: 'X1', year: 2021, otrPrice: 780_000_000 },
+
+  { brand: 'BMW', model: 'X3', year: 2025, otrPrice: 1_490_000_000 },
+  { brand: 'BMW', model: 'X3', year: 2024, otrPrice: 1_420_000_000 },
+  { brand: 'BMW', model: 'X3', year: 2023, otrPrice: 1_369_000_000 },
+  { brand: 'BMW', model: 'X3', year: 2022, otrPrice: 1_290_000_000 },
+  { brand: 'BMW', model: 'X3', year: 2021, otrPrice: 1_200_000_000 },
+  { brand: 'BMW', model: 'X3', year: 2020, otrPrice: 1_120_000_000 },
+
+  { brand: 'BMW', model: 'X5', year: 2025, otrPrice: 2_100_000_000 },
+  { brand: 'BMW', model: 'X5', year: 2024, otrPrice: 1_980_000_000 },
+  { brand: 'BMW', model: 'X5', year: 2023, otrPrice: 1_897_000_000 },
+  { brand: 'BMW', model: 'X5', year: 2022, otrPrice: 1_790_000_000 },
+  { brand: 'BMW', model: 'X5', year: 2021, otrPrice: 1_680_000_000 },
+  { brand: 'BMW', model: 'X5', year: 2020, otrPrice: 1_580_000_000 },
+
+  { brand: 'BMW', model: 'X7', year: 2024, otrPrice: 2_864_000_000 },
+  { brand: 'BMW', model: 'X7', year: 2023, otrPrice: 2_700_000_000 },
+  { brand: 'BMW', model: 'X7', year: 2022, otrPrice: 2_550_000_000 },
+
+  { brand: 'BMW', model: 'i4', year: 2025, otrPrice: 2_200_000_000 },
+  { brand: 'BMW', model: 'i4', year: 2024, otrPrice: 2_108_000_000 },
+  { brand: 'BMW', model: 'i4', year: 2023, otrPrice: 1_990_000_000 },
+
+  { brand: 'BMW', model: 'iX', year: 2025, otrPrice: 2_665_000_000 },
+  { brand: 'BMW', model: 'iX', year: 2024, otrPrice: 2_550_000_000 },
+  { brand: 'BMW', model: 'iX', year: 2023, otrPrice: 2_483_000_000 },
+
+  { brand: 'BMW', model: 'M3', year: 2024, otrPrice: 2_599_000_000 },
+  { brand: 'BMW', model: 'M3', year: 2023, otrPrice: 2_450_000_000 },
+
+  { brand: 'BMW', model: 'M5', year: 2025, otrPrice: 4_747_000_000 },
+  { brand: 'BMW', model: 'M5', year: 2024, otrPrice: 4_500_000_000 },
+
+  // ── MINI ───────────────────────────────────────────────────────
+  { brand: 'MINI', model: 'Cooper', year: 2025, otrPrice: 1_214_000_000 },
+  { brand: 'MINI', model: 'Cooper', year: 2024, otrPrice: 1_150_000_000 },
+  { brand: 'MINI', model: 'Cooper', year: 2023, otrPrice: 1_080_000_000 },
+  { brand: 'MINI', model: 'Cooper', year: 2022, otrPrice: 1_010_000_000 },
+  { brand: 'MINI', model: 'Cooper', year: 2021, otrPrice: 940_000_000 },
+
+  { brand: 'MINI', model: 'Cooper Electric', year: 2025, otrPrice: 1_117_000_000 },
+  { brand: 'MINI', model: 'Cooper Electric', year: 2024, otrPrice: 1_060_000_000 },
+
+  { brand: 'MINI', model: 'Countryman', year: 2025, otrPrice: 1_493_000_000 },
+  { brand: 'MINI', model: 'Countryman', year: 2024, otrPrice: 1_390_000_000 },
+  { brand: 'MINI', model: 'Countryman', year: 2023, otrPrice: 1_300_000_000 },
+  { brand: 'MINI', model: 'Countryman', year: 2022, otrPrice: 1_190_000_000 },
+  { brand: 'MINI', model: 'Countryman', year: 2021, otrPrice: 1_100_000_000 },
+
+  { brand: 'MINI', model: 'Countryman Electric', year: 2025, otrPrice: 1_452_000_000 },
+  { brand: 'MINI', model: 'Countryman Electric', year: 2024, otrPrice: 1_380_000_000 },
+
+  { brand: 'MINI', model: 'Aceman Electric', year: 2025, otrPrice: 1_170_000_000 },
+
+  // ── LEXUS ──────────────────────────────────────────────────────
+  { brand: 'Lexus', model: 'UX', year: 2025, otrPrice: 1_166_000_000 },
+  { brand: 'Lexus', model: 'UX', year: 2024, otrPrice: 1_120_000_000 },
+  { brand: 'Lexus', model: 'UX', year: 2023, otrPrice: 1_080_000_000 },
+  { brand: 'Lexus', model: 'UX', year: 2022, otrPrice: 1_020_000_000 },
+  { brand: 'Lexus', model: 'UX', year: 2021, otrPrice: 960_000_000 },
+
+  { brand: 'Lexus', model: 'ES', year: 2025, otrPrice: 1_391_000_000 },
+  { brand: 'Lexus', model: 'ES', year: 2024, otrPrice: 1_320_000_000 },
+  { brand: 'Lexus', model: 'ES', year: 2023, otrPrice: 1_250_000_000 },
+  { brand: 'Lexus', model: 'ES', year: 2022, otrPrice: 1_180_000_000 },
+  { brand: 'Lexus', model: 'ES', year: 2021, otrPrice: 1_100_000_000 },
+  { brand: 'Lexus', model: 'ES', year: 2020, otrPrice: 1_030_000_000 },
+
+  { brand: 'Lexus', model: 'NX', year: 2025, otrPrice: 1_665_000_000 },
+  { brand: 'Lexus', model: 'NX', year: 2024, otrPrice: 1_570_000_000 },
+  { brand: 'Lexus', model: 'NX', year: 2023, otrPrice: 1_471_000_000 },
+  { brand: 'Lexus', model: 'NX', year: 2022, otrPrice: 1_360_000_000 },
+  { brand: 'Lexus', model: 'NX', year: 2021, otrPrice: 1_270_000_000 },
+  { brand: 'Lexus', model: 'NX', year: 2020, otrPrice: 1_190_000_000 },
+
+  { brand: 'Lexus', model: 'RX', year: 2025, otrPrice: 2_123_000_000 },
+  { brand: 'Lexus', model: 'RX', year: 2024, otrPrice: 2_010_000_000 },
+  { brand: 'Lexus', model: 'RX', year: 2023, otrPrice: 1_893_000_000 },
+  { brand: 'Lexus', model: 'RX', year: 2022, otrPrice: 1_750_000_000 },
+  { brand: 'Lexus', model: 'RX', year: 2021, otrPrice: 1_620_000_000 },
+  { brand: 'Lexus', model: 'RX', year: 2020, otrPrice: 1_520_000_000 },
+
+  { brand: 'Lexus', model: 'LX', year: 2025, otrPrice: 3_392_000_000 },
+  { brand: 'Lexus', model: 'LX', year: 2024, otrPrice: 3_200_000_000 },
+  { brand: 'Lexus', model: 'LX', year: 2023, otrPrice: 3_050_000_000 },
+
+  { brand: 'Lexus', model: 'LC', year: 2024, otrPrice: 1_706_000_000 },
+  { brand: 'Lexus', model: 'LC', year: 2023, otrPrice: 1_620_000_000 },
+
+  { brand: 'Lexus', model: 'LS', year: 2024, otrPrice: 1_967_000_000 },
+  { brand: 'Lexus', model: 'LS', year: 2023, otrPrice: 1_870_000_000 },
+  { brand: 'Lexus', model: 'LS', year: 2022, otrPrice: 1_780_000_000 },
+
+  // ── BYD ────────────────────────────────────────────────────────
+  { brand: 'BYD', model: 'Dolphin', year: 2025, otrPrice: 429_000_000 },
+  { brand: 'BYD', model: 'Dolphin', year: 2024, otrPrice: 399_000_000 },
+  { brand: 'BYD', model: 'Dolphin', year: 2023, otrPrice: 369_000_000 },
+
+  { brand: 'BYD', model: 'Atto 3', year: 2025, otrPrice: 420_000_000 },
+  { brand: 'BYD', model: 'Atto 3', year: 2024, otrPrice: 399_000_000 },
+  { brand: 'BYD', model: 'Atto 3', year: 2023, otrPrice: 390_000_000 },
+
+  { brand: 'BYD', model: 'M6', year: 2025, otrPrice: 433_000_000 },
+  { brand: 'BYD', model: 'M6', year: 2024, otrPrice: 410_000_000 },
+  { brand: 'BYD', model: 'M6', year: 2023, otrPrice: 383_000_000 },
+
+  { brand: 'BYD', model: 'Seal', year: 2025, otrPrice: 750_000_000 },
+  { brand: 'BYD', model: 'Seal', year: 2024, otrPrice: 700_000_000 },
+  { brand: 'BYD', model: 'Seal', year: 2023, otrPrice: 639_000_000 },
+
+  // ── VINFAST ────────────────────────────────────────────────────
+  { brand: 'VinFast', model: 'VF 3', year: 2025, otrPrice: 248_000_000 },
+  { brand: 'VinFast', model: 'VF 3', year: 2024, otrPrice: 230_130_000 },
+
+  { brand: 'VinFast', model: 'VF 5', year: 2025, otrPrice: 348_000_000 },
+  { brand: 'VinFast', model: 'VF 5', year: 2024, otrPrice: 323_170_000 },
+
+  { brand: 'VinFast', model: 'VF 6', year: 2025, otrPrice: 439_600_000 },
+  { brand: 'VinFast', model: 'VF 6', year: 2024, otrPrice: 410_000_000 },
+
+  { brand: 'VinFast', model: 'VF 7', year: 2025, otrPrice: 520_000_000 },
+  { brand: 'VinFast', model: 'VF 7', year: 2024, otrPrice: 499_000_000 },
+
+  { brand: 'VinFast', model: 'VF e34', year: 2025, otrPrice: 435_000_000 },
+  { brand: 'VinFast', model: 'VF e34', year: 2024, otrPrice: 411_860_000 },
+
+  // ── GEELY ──────────────────────────────────────────────────────
+  { brand: 'Geely', model: 'Coolray', year: 2026, otrPrice: 350_000_000 },
+  { brand: 'Geely', model: 'Okavango', year: 2026, otrPrice: 450_000_000 },
+
+  // ── CHERY / OMODA ──────────────────────────────────────────────
+  { brand: 'Chery', model: 'Omoda 5', year: 2025, otrPrice: 409_800_000 },
+  { brand: 'Chery', model: 'Omoda 5', year: 2024, otrPrice: 379_800_000 },
+  { brand: 'Chery', model: 'Omoda 5', year: 2023, otrPrice: 334_800_000 },
+
+  { brand: 'Chery', model: 'Omoda E5', year: 2025, otrPrice: 406_900_000 },
+  { brand: 'Chery', model: 'Omoda E5', year: 2024, otrPrice: 385_000_000 },
+
+  { brand: 'Chery', model: 'Tiggo 7 Pro', year: 2025, otrPrice: 437_000_000 },
+  { brand: 'Chery', model: 'Tiggo 7 Pro', year: 2024, otrPrice: 415_000_000 },
+  { brand: 'Chery', model: 'Tiggo 7 Pro', year: 2023, otrPrice: 369_500_000 },
+
+  { brand: 'Chery', model: 'Tiggo 8 Pro', year: 2025, otrPrice: 558_500_000 },
+  { brand: 'Chery', model: 'Tiggo 8 Pro', year: 2024, otrPrice: 528_500_000 },
+  { brand: 'Chery', model: 'Tiggo 8 Pro', year: 2023, otrPrice: 498_000_000 },
+
+  { brand: 'Chery', model: 'Tiggo 8 Pro Max', year: 2025, otrPrice: 638_500_000 },
+  { brand: 'Chery', model: 'Tiggo 8 Pro Max', year: 2024, otrPrice: 600_000_000 },
+
+  // ── JETOUR ─────────────────────────────────────────────────────
+  { brand: 'Jetour', model: 'Dashing', year: 2025, otrPrice: 379_800_000 },
+  { brand: 'Jetour', model: 'Dashing', year: 2024, otrPrice: 360_000_000 },
+  { brand: 'Jetour', model: 'Dashing', year: 2023, otrPrice: 348_800_000 },
+
+  { brand: 'Jetour', model: 'X70 Plus', year: 2025, otrPrice: 389_800_000 },
+  { brand: 'Jetour', model: 'X70 Plus', year: 2024, otrPrice: 375_000_000 },
+  { brand: 'Jetour', model: 'X70 Plus', year: 2023, otrPrice: 359_800_000 },
+
+  { brand: 'Jetour', model: 'T2', year: 2025, otrPrice: 588_000_000 },
+  { brand: 'Jetour', model: 'T2', year: 2024, otrPrice: 568_000_000 },
+
+  // ── XPENG ──────────────────────────────────────────────────────
+  { brand: 'Xpeng', model: 'G6', year: 2025, otrPrice: 630_000_000 },
+  { brand: 'Xpeng', model: 'G6', year: 2024, otrPrice: 599_000_000 },
+
+  { brand: 'Xpeng', model: 'X9', year: 2025, otrPrice: 1_099_000_000 },
+  { brand: 'Xpeng', model: 'X9', year: 2024, otrPrice: 1_059_000_000 },
+
+  // ── BAIC ───────────────────────────────────────────────────────
+  { brand: 'BAIC', model: 'X55', year: 2025, otrPrice: 429_000_000 },
+  { brand: 'BAIC', model: 'X55', year: 2024, otrPrice: 405_000_000 },
+  { brand: 'BAIC', model: 'X55', year: 2023, otrPrice: 380_000_000 },
+
+  { brand: 'BAIC', model: 'BJ40', year: 2025, otrPrice: 720_000_000 },
+  { brand: 'BAIC', model: 'BJ40', year: 2024, otrPrice: 698_000_000 },
+  { brand: 'BAIC', model: 'BJ40', year: 2023, otrPrice: 665_000_000 },
+
+  { brand: 'BAIC', model: 'BJ30', year: 2025, otrPrice: 575_000_000 },
+  { brand: 'BAIC', model: 'BJ30', year: 2024, otrPrice: 540_000_000 },
+
+  // ── VOLVO ──────────────────────────────────────────────────────
+  { brand: 'Volvo', model: 'EX30', year: 2025, otrPrice: 930_000_000 },
+  { brand: 'Volvo', model: 'EX30', year: 2024, otrPrice: 890_000_000 },
+
+  { brand: 'Volvo', model: 'XC40', year: 2025, otrPrice: 1_100_000_000 },
+  { brand: 'Volvo', model: 'XC40', year: 2024, otrPrice: 1_050_000_000 },
+  { brand: 'Volvo', model: 'XC40', year: 2023, otrPrice: 990_000_000 },
+  { brand: 'Volvo', model: 'XC40', year: 2022, otrPrice: 930_000_000 },
+  { brand: 'Volvo', model: 'XC40', year: 2021, otrPrice: 880_000_000 },
+
+  { brand: 'Volvo', model: 'XC40 Recharge', year: 2025, otrPrice: 1_380_000_000 },
+  { brand: 'Volvo', model: 'XC40 Recharge', year: 2024, otrPrice: 1_310_000_000 },
+
+  { brand: 'Volvo', model: 'C40 Recharge', year: 2025, otrPrice: 1_420_000_000 },
+  { brand: 'Volvo', model: 'C40 Recharge', year: 2024, otrPrice: 1_360_000_000 },
+
+  { brand: 'Volvo', model: 'XC60', year: 2025, otrPrice: 1_590_000_000 },
+  { brand: 'Volvo', model: 'XC60', year: 2024, otrPrice: 1_490_000_000 },
+  { brand: 'Volvo', model: 'XC60', year: 2023, otrPrice: 1_410_000_000 },
+  { brand: 'Volvo', model: 'XC60', year: 2022, otrPrice: 1_330_000_000 },
+  { brand: 'Volvo', model: 'XC60', year: 2021, otrPrice: 1_250_000_000 },
+
+  { brand: 'Volvo', model: 'XC90', year: 2025, otrPrice: 1_980_000_000 },
+  { brand: 'Volvo', model: 'XC90', year: 2024, otrPrice: 1_890_000_000 },
+  { brand: 'Volvo', model: 'XC90', year: 2023, otrPrice: 1_800_000_000 },
+  { brand: 'Volvo', model: 'XC90', year: 2022, otrPrice: 1_700_000_000 },
+
+  { brand: 'Volvo', model: 'EX90', year: 2025, otrPrice: 1_980_000_000 },
+  { brand: 'Volvo', model: 'EX90', year: 2024, otrPrice: 1_850_000_000 },
+
+  // ── ALETRA ─────────────────────────────────────────────────────
+  { brand: 'Aletra', model: 'L8', year: 2025, otrPrice: 488_000_000 },
+  { brand: 'Aletra', model: 'L8', year: 2024, otrPrice: 448_000_000 },
+
+  // ── POLYTRON ───────────────────────────────────────────────────
+  { brand: 'Polytron', model: 'G3', year: 2025, otrPrice: 459_000_000 },
+  { brand: 'Polytron', model: 'G3', year: 2024, otrPrice: 419_000_000 },
 ]
 
 export function getBrands(): string[] {

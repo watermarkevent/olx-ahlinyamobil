@@ -12,6 +12,7 @@ const RECOMMENDATIONS: Record<Archetype, { toyota: CarOption[]; daihatsu: CarOpt
       { brand: 'Toyota', model: 'Agya', priceMin: 175_000_000 },
       { brand: 'Toyota', model: 'Calya', priceMin: 178_000_000 },
       { brand: 'Toyota', model: 'Yaris', priceMin: 320_000_000 },
+      { brand: 'Toyota', model: 'Raize', priceMin: 258_000_000 },
       { brand: 'Toyota', model: 'Corolla Cross', priceMin: 450_000_000 },
     ],
     daihatsu: [
@@ -23,6 +24,10 @@ const RECOMMENDATIONS: Record<Archetype, { toyota: CarOption[]; daihatsu: CarOpt
       { brand: 'Honda', model: 'Brio', priceMin: 168_000_000 },
       { brand: 'Honda', model: 'HR-V', priceMin: 368_000_000 },
       { brand: 'Suzuki', model: 'Baleno', priceMin: 245_000_000 },
+      { brand: 'MG', model: 'ZS', priceMin: 315_800_000 },
+      { brand: 'KIA', model: 'Sonet', priceMin: 210_000_000 },
+      { brand: 'BYD', model: 'Dolphin', priceMin: 369_000_000 },
+      { brand: 'VinFast', model: 'VF 5', priceMin: 323_170_000 },
     ],
   },
   FAMILY: {
@@ -41,6 +46,10 @@ const RECOMMENDATIONS: Record<Archetype, { toyota: CarOption[]; daihatsu: CarOpt
       { brand: 'Mitsubishi', model: 'Xpander', priceMin: 298_000_000 },
       { brand: 'Suzuki', model: 'Ertiga', priceMin: 258_000_000 },
       { brand: 'Wuling', model: 'Almaz', priceMin: 325_000_000 },
+      { brand: 'KIA', model: 'Carnival', priceMin: 960_000_000 },
+      { brand: 'BYD', model: 'M6', priceMin: 383_000_000 },
+      { brand: 'Chery', model: 'Tiggo 8 Pro', priceMin: 498_000_000 },
+      { brand: 'Xpeng', model: 'X9', priceMin: 1_059_000_000 },
     ],
   },
   ADVENTURE: {
@@ -56,6 +65,12 @@ const RECOMMENDATIONS: Record<Archetype, { toyota: CarOption[]; daihatsu: CarOpt
     alt: [
       { brand: 'Mitsubishi', model: 'Pajero Sport', priceMin: 615_000_000 },
       { brand: 'Mitsubishi', model: 'Outlander Sport', priceMin: 378_000_000 },
+      { brand: 'Isuzu', model: 'mu-X', priceMin: 599_000_000 },
+      { brand: 'Isuzu', model: 'D-Max', priceMin: 413_000_000 },
+      { brand: 'Ford', model: 'Everest', priceMin: 832_000_000 },
+      { brand: 'Ford', model: 'Ranger', priceMin: 551_000_000 },
+      { brand: 'BAIC', model: 'BJ40', priceMin: 665_000_000 },
+      { brand: 'Subaru', model: 'Forester', priceMin: 688_000_000 },
     ],
   },
   PREMIUM: {
@@ -66,10 +81,22 @@ const RECOMMENDATIONS: Record<Archetype, { toyota: CarOption[]; daihatsu: CarOpt
       { brand: 'Toyota', model: 'Vellfire', priceMin: 1_590_000_000 },
       { brand: 'Toyota', model: 'Land Cruiser', priceMin: 2_200_000_000 },
     ],
-    daihatsu: [], // no premium Daihatsu per blueprint rule
+    daihatsu: [], // no premium Daihatsu
     alt: [
       { brand: 'Hyundai', model: 'Ioniq 5', priceMin: 800_000_000 },
       { brand: 'Hyundai', model: 'Tucson', priceMin: 598_000_000 },
+      { brand: 'BMW', model: 'X1', priceMin: 880_000_000 },
+      { brand: 'BMW', model: 'X3', priceMin: 1_369_000_000 },
+      { brand: 'BMW', model: '3 Series', priceMin: 1_205_000_000 },
+      { brand: 'Mercedes-Benz', model: 'GLA', priceMin: 1_010_000_000 },
+      { brand: 'Mercedes-Benz', model: 'C-Class', priceMin: 1_250_000_000 },
+      { brand: 'Lexus', model: 'UX', priceMin: 1_080_000_000 },
+      { brand: 'Lexus', model: 'NX', priceMin: 1_471_000_000 },
+      { brand: 'Volvo', model: 'XC40', priceMin: 990_000_000 },
+      { brand: 'Volvo', model: 'XC60', priceMin: 1_410_000_000 },
+      { brand: 'KIA', model: 'EV6', priceMin: 1_199_000_000 },
+      { brand: 'BYD', model: 'Seal', priceMin: 639_000_000 },
+      { brand: 'Xpeng', model: 'G6', priceMin: 599_000_000 },
     ],
   },
 }
