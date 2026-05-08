@@ -29,11 +29,10 @@ interface Props {
   onSendWA: () => void
   waSending: boolean
   waSent: boolean
-  countdown: number | null
   onReset: () => void
 }
 
-export default function Hasil({ hasil, onSendWA, waSending, waSent, countdown, onReset }: Props) {
+export default function Hasil({ hasil, onSendWA, waSending, waSent, onReset }: Props) {
   const fmtJt = (n: number) => `Rp ${Math.round(n / 1_000_000)} jt`
   const showValuation = hasil.hasCar === true && hasil.valuationMin && hasil.valuationMax
   const showRecommendation = hasil.tujuan !== 'harga' && hasil.primaryBrand
@@ -179,9 +178,7 @@ export default function Hasil({ hasil, onSendWA, waSending, waSent, countdown, o
           className="w-full py-4 rounded-2xl text-base font-bold border-2 transition-all active:scale-95"
           style={{ borderColor: '#D1D5DB', color: 'var(--mid-gray)', background: '#fff' }}
         >
-          {countdown !== null
-            ? `Kembali ke Halaman Awal (${countdown}s)`
-            : 'Kembali ke Halaman Awal'}
+          Kembali ke Halaman Awal
         </button>
 
         <p className="text-center text-xs pb-6" style={{ color: 'var(--mid-gray)' }}>

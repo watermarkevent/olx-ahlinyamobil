@@ -11,11 +11,20 @@ export async function POST(req: NextRequest) {
     .replace(/^0/, '').replace(/^\+62/, '').replace(/^62/, '')
   const target = `62${wa}`
 
+  // ── Build message based on tujuan ──────────────────────────────
   const carLine = data.hasCar === true && data.carBrand
-    ? `🚗 *Mobilmu sekarang*\n${data.carBrand} ${data.carModel} ${data.carYear}\n💰 Estimasi trade-in: *${fmtJt(data.valuationMin)} – ${fmtJt(data.valuationMax)}*\n\n`
+    ? `🚗 *Mobilmu sekarang*\n${data.carBrand} ${data.carModel} ${data.carYear}\n`
     : ''
 
-  const gapLine = data.hasCar === true && data.gapAmount > 0
+  const valuationLine = data.valuationMin && data.valuationMax
+    ? `💰 Estimasi trade-in: *${fmtJt(data.valuationMin)} – ${fmtJt(data.valuationMax)}*\n`
+    : ''
+
+  const recommendationBlock = data.primaryBrand && data.primaryModel
+    ? `\n⭐ *Rekomendasi Utama*\n${data.primaryBrand} ${data.primaryModel}\nHarga mulai *${fmtJt(data.primaryPriceMin)}*\n✅ Cashback Eksklusif tersedia di GIIAS 2026!\n\n💡 *Alternatif*\n${data.altBrand} ${data.altModel} – mulai ${fmtJt(data.altPriceMin)}`
+    : ''
+
+  const gapLine = data.hasCar === true && data.gapAmount > 0 && data.primaryBrand
     ? `\n📊 *Estimasi top-up kamu: ± ${fmtJt(data.gapAmount)}*`
     : ''
 
@@ -23,32 +32,23 @@ export async function POST(req: NextRequest) {
 
 Ini hasil *OLX AhlinyaMobil* kamu di GIIAS 2026:
 
-${carLine}⭐ *Rekomendasi Utama*
-${data.primaryBrand} ${data.primaryModel}
-Harga mulai *${fmtJt(data.primaryPriceMin)}*
-✅ Cashback Eksklusif tersedia di GIIAS 2026!
-
-💡 *Alternatif*
-${data.altBrand} ${data.altModel} – mulai ${fmtJt(data.altPriceMin)}${gapLine}
+${carLine}${valuationLine}${recommendationBlock}${gapLine}
 
 Temui tim OLX Mobbi di *Booth Hall A*
 untuk penawaran trade-in terbaik! 🙌
 
 _OLX Mobbi × GIIAS 2026_`
 
-  const fonnteKey = process.env.FONNTE_API_KEY
-  if (!fonnteKey) {
-    console.warn('FONNTE_API_KEY not set, skipping WA send')
+  const fonnteToken = process.env.FONNTE_TOKEN
+  if (!fonnteToken) {
+    console.warn('FONNTE_TOKEN not set, skipping WA send')
     return NextResponse.json({ ok: true, skipped: true })
   }
 
   const res = await fetch('https://api.fonnte.com/send', {
     method: 'POST',
-    headers: {
-      Authorization: fonnteKey,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ target, message, countryCode: '62' }),
+    headers: { Authorization: fonnteToken },
+    body: new URLSearchParams({ target, message, countryCode: '62' }),
   })
 
   const result = await res.json()

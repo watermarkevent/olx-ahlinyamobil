@@ -5,8 +5,6 @@ import { useRouter, useSearchParams } from 'next/navigation'
 import Hasil, { HasilData } from '@/components/screens/Hasil'
 import LoadingScreen from '@/components/screens/LoadingScreen'
 
-const KIOSK_COUNTDOWN_SEC = 15
-
 function HasilInner() {
   const router = useRouter()
   const searchParams = useSearchParams()
@@ -15,31 +13,12 @@ function HasilInner() {
   const [hasil, setHasil] = useState<HasilData | null>(null)
   const [waSending, setWaSending] = useState(false)
   const [waSent, setWaSent] = useState(false)
-  const [countdown, setCountdown] = useState(KIOSK_COUNTDOWN_SEC)
-  const [countdownActive, setCountdownActive] = useState(false)
 
   useEffect(() => {
     const raw = sessionStorage.getItem('hasilData')
     if (!raw) { router.replace('/'); return }
-    const parsed = JSON.parse(raw) as HasilData & { source?: string }
-    setHasil(parsed)
-    // Start countdown after a short delay so user can read
-    const t = setTimeout(() => setCountdownActive(true), 5000)
-    return () => clearTimeout(t)
+    setHasil(JSON.parse(raw) as HasilData)
   }, [router])
-
-  // Countdown tick
-  useEffect(() => {
-    if (!countdownActive) return
-    if (countdown <= 0) {
-      sessionStorage.removeItem('hasilData')
-      const dest = src ? `/?src=${encodeURIComponent(src)}` : '/'
-      router.replace(dest)
-      return
-    }
-    const t = setTimeout(() => setCountdown((c) => c - 1), 1000)
-    return () => clearTimeout(t)
-  }, [countdownActive, countdown, router, src])
 
   const handleSendWA = async () => {
     if (!hasil || waSent) return
@@ -60,8 +39,7 @@ function HasilInner() {
 
   const handleReset = () => {
     sessionStorage.removeItem('hasilData')
-    const dest = src ? `/?src=${encodeURIComponent(src)}` : '/'
-    router.replace(dest)
+    router.replace(src ? `/?src=${encodeURIComponent(src)}` : '/')
   }
 
   if (!hasil) return <LoadingScreen />
@@ -72,7 +50,6 @@ function HasilInner() {
       onSendWA={handleSendWA}
       waSending={waSending}
       waSent={waSent}
-      countdown={countdownActive ? countdown : null}
       onReset={handleReset}
     />
   )
