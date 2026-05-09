@@ -150,7 +150,7 @@ export default function Hasil({ hasil, onSendWA, waSending, waSent, onReset }: P
         {/* CTA booth */}
         <div className="rounded-2xl p-5 text-center" style={{ background: 'var(--trusted-blue)' }}>
           <p className="text-white font-black text-lg">Temui Tim OLXmobbi</p>
-          <p className="text-sm mt-1" style={{ color: '#B8C9E8' }}>di Booth Hall A &mdash; GIIAS 2026</p>
+          <p className="text-sm mt-1" style={{ color: '#B8C9E8' }}>di Pre-Function Hall 10 &mdash; GIIAS 2026</p>
           <p className="text-sm mt-1 font-bold" style={{ color: 'var(--certified-orange)' }}>
             Penawaran trade-in terbaik menantimu!
           </p>

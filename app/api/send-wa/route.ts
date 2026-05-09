@@ -30,11 +30,11 @@ export async function POST(req: NextRequest) {
 
   const message = `Halo ${data.nama}! 👋
 
-Ini hasil *OLX AhlinyaMobil* kamu di GIIAS 2026:
+Ini hasil *OLX AHLI PILIH MOBIL* kamu di GIIAS 2026:
 
 ${carLine}${valuationLine}${recommendationBlock}${gapLine}
 
-Temui tim OLXmobbi di *Booth Hall A*
+Temui tim OLXmobbi di *Pre-Function Hall 10*
 untuk penawaran trade-in terbaik! 🙌
 
 _OLXmobbi × GIIAS 2026_`
