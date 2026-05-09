@@ -14,36 +14,6 @@ function calcLeadQuality(form: Record<string, unknown>): 'HOT' | 'WARM' | 'COLD'
   return 'COLD'
 }
 
-async function sendManagerAlert(form: Record<string, unknown>, quality: string) {
-  const managerWa = process.env.MANAGER_WHATSAPP
-  const fonnteToken = process.env.FONNTE_TOKEN
-  if (!managerWa || !fonnteToken || quality !== 'HOT') return
-
-  const wa = (form.whatsapp as string).replace(/^0/, '').replace(/^\+62/, '').replace(/^62/, '')
-  const normalizedWa = `62${wa}`
-  const src = (form.source as string) ?? 'direct'
-
-  const msg = [
-    `🔥 *HOT LEAD ALERT* — OLX AhlinyaMobil`,
-    ``,
-    `Nama  : ${form.nama}`,
-    `WA    : +${normalizedWa}`,
-    `Source: ${src}`,
-    `Mobil : ${form.carBrand ?? '-'} ${form.carModel ?? '-'} ${form.carYear ?? ''}`.trim(),
-    `Income: ${form.incomeRange ?? '-'}`,
-    `Tujuan: ${form.tujuan ?? '-'}`,
-  ].join('\n')
-
-  try {
-    await fetch('https://api.fonnte.com/send', {
-      method: 'POST',
-      headers: { Authorization: fonnteToken },
-      body: new URLSearchParams({ target: managerWa, message: msg }),
-    })
-  } catch (e) {
-    console.error('Manager WA alert failed:', e)
-  }
-}
 
 export async function POST(req: NextRequest) {
   const { form, valuation, recommendation, source } = await req.json()
@@ -98,9 +68,6 @@ export async function POST(req: NextRequest) {
     console.error('Supabase insert error:', error)
     return NextResponse.json({ error: error.message }, { status: 500 })
   }
-
-  // Non-blocking manager alert
-  sendManagerAlert({ ...form, source }, leadQuality)
 
   return NextResponse.json({ ok: true, leadQuality })
 }
