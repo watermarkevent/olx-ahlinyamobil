@@ -29,12 +29,12 @@ export default function Landing({ onStart }: Props) {
           #PilihYangAhli
         </p>
         <h1 className="text-4xl font-black text-white leading-tight mb-4">
-          AhliNyaMobil<br />kamu ada di sini.
+          AHLI PILIH MOBIL<br />kamu ada di sini.
         </h1>
         <p className="text-base leading-relaxed" style={{ color: '#B8C9E8' }}>
           Dapatkan <strong className="text-white">estimasi trade-in</strong> mobilmu dan{' '}
           <strong className="text-white">rekomendasi mobil baru</strong> yang sesuai profil hidupmu
-          — hanya kurang dari 2 menit.
+          — hanya dalam 30 detik.
         </p>
 
         <div className="mt-8 flex flex-col gap-4">
@@ -60,7 +60,7 @@ export default function Landing({ onStart }: Props) {
           Mulai Sekarang
         </button>
         <p className="text-center text-xs mt-3" style={{ color: '#7A9CC4' }}>
-          Gratis &middot; Tidak perlu daftar &middot; 2 menit
+          Gratis &middot; Tidak perlu daftar &middot; 30 detik
         </p>
       </div>
     </div>
