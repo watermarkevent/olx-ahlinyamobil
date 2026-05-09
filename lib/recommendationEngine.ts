@@ -205,19 +205,23 @@ export function getRecommendation(
   const pool = RECOMMENDATIONS[archetype]
   const maxPrice = INCOME_MAX_PRICE[incomeRange] ?? Infinity
 
-  const filterByIncome = (options: CarOption[]) =>
-    options.filter((o) => o.priceMin <= maxPrice)
+  // Filter by income, then pick the MOST PREMIUM option that still fits
+  const bestFit = (options: CarOption[]): CarOption[] =>
+    options
+      .filter((o) => o.priceMin <= maxPrice)
+      .sort((a, b) => b.priceMin - a.priceMin) // descending — most expensive first
 
   // Primary: Toyota first; skip Daihatsu for PREMIUM
-  const toyotaOptions = filterByIncome(pool.toyota)
-  const daihatsuOptions = archetype === 'PREMIUM' ? [] : filterByIncome(pool.daihatsu)
-  const primaryOptions = [...toyotaOptions, ...daihatsuOptions]
+  const toyotaOptions = bestFit(pool.toyota)
+  const daihatsuOptions = archetype === 'PREMIUM' ? [] : bestFit(pool.daihatsu)
 
-  const primary = primaryOptions[0] ?? pool.toyota[0] // fallback to cheapest Toyota
+  // Prefer Toyota if it has a match; otherwise fallback to Daihatsu
+  const primaryOptions = toyotaOptions.length ? toyotaOptions : daihatsuOptions
+  const primary = primaryOptions[0] ?? pool.toyota[pool.toyota.length - 1] // fallback to most premium Toyota
 
-  // Alternative
-  const altOptions = filterByIncome(pool.alt)
-  const alternative = altOptions[0] ?? pool.alt[0]
+  // Alternative: best-fit from alt pool (different brand from primary)
+  const altOptions = bestFit(pool.alt).filter((o) => o.brand !== primary.brand)
+  const alternative = altOptions[0] ?? bestFit(pool.alt)[0] ?? pool.alt[pool.alt.length - 1]
 
   return { primary, alternative, dominantArchetype: archetype }
 }
