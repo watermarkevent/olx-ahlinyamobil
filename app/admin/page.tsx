@@ -146,8 +146,14 @@ export default function AdminPage() {
   if (!stats) return null
 
   const maxDay = Math.max(...stats.last7Days.map((d) => d.count), 1)
-  const conversionRate = stats.funnel.started > 0
+  const completionRate = stats.funnel.started > 0
     ? Math.round((stats.funnel.completed / stats.funnel.started) * 100)
+    : 0
+  const leadRate = stats.funnel.started > 0
+    ? Math.round((stats.totalLeads / stats.funnel.started) * 100)
+    : 0
+  const hotRate = stats.totalLeads > 0
+    ? Math.round((stats.qualityBreakdown.HOT / stats.totalLeads) * 100)
     : 0
 
   return (
@@ -195,10 +201,60 @@ export default function AdminPage() {
             <p className="text-3xl font-black" style={{ color: 'var(--trusted-blue)' }}>{stats.funnel.started}</p>
           </div>
           <div className="rounded-2xl p-4 bg-white">
-            <p className="text-xs font-bold uppercase tracking-wider mb-1" style={{ color: '#94A3B8' }}>Konversi</p>
-            <p className="text-3xl font-black" style={{ color: conversionRate >= 50 ? '#16A34A' : 'var(--certified-orange)' }}>
-              {conversionRate}%
-            </p>
+            <p className="text-xs font-bold uppercase tracking-wider mb-1" style={{ color: '#94A3B8' }}>Form Selesai</p>
+            <p className="text-3xl font-black" style={{ color: 'var(--trusted-blue)' }}>{stats.funnel.completed}</p>
+          </div>
+        </div>
+
+        {/* 3 conversion metrics */}
+        <div className="rounded-2xl p-4 bg-white">
+          <p className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: '#94A3B8' }}>Konversi</p>
+          <div className="flex flex-col gap-3">
+            {/* Completion rate */}
+            <div>
+              <div className="flex justify-between items-baseline mb-1">
+                <div>
+                  <span className="text-sm font-bold" style={{ color: 'var(--trusted-blue)' }}>Completion Rate</span>
+                  <span className="text-xs ml-2" style={{ color: '#94A3B8' }}>form selesai ÷ form dimulai</span>
+                </div>
+                <span className="text-xl font-black" style={{ color: completionRate >= 60 ? '#16A34A' : 'var(--certified-orange)' }}>
+                  {completionRate}%
+                </span>
+              </div>
+              <div className="h-2 rounded-full" style={{ background: '#E2E8F0' }}>
+                <div className="h-2 rounded-full transition-all" style={{ width: `${completionRate}%`, background: completionRate >= 60 ? '#16A34A' : 'var(--certified-orange)' }} />
+              </div>
+            </div>
+            {/* Lead rate */}
+            <div>
+              <div className="flex justify-between items-baseline mb-1">
+                <div>
+                  <span className="text-sm font-bold" style={{ color: 'var(--trusted-blue)' }}>Lead Rate</span>
+                  <span className="text-xs ml-2" style={{ color: '#94A3B8' }}>leads tersimpan ÷ form dimulai</span>
+                </div>
+                <span className="text-xl font-black" style={{ color: leadRate >= 50 ? '#16A34A' : 'var(--certified-orange)' }}>
+                  {leadRate}%
+                </span>
+              </div>
+              <div className="h-2 rounded-full" style={{ background: '#E2E8F0' }}>
+                <div className="h-2 rounded-full transition-all" style={{ width: `${Math.min(leadRate, 100)}%`, background: leadRate >= 50 ? '#16A34A' : 'var(--certified-orange)' }} />
+              </div>
+            </div>
+            {/* HOT rate */}
+            <div>
+              <div className="flex justify-between items-baseline mb-1">
+                <div>
+                  <span className="text-sm font-bold" style={{ color: 'var(--trusted-blue)' }}>HOT Rate</span>
+                  <span className="text-xs ml-2" style={{ color: '#94A3B8' }}>HOT leads ÷ total leads</span>
+                </div>
+                <span className="text-xl font-black" style={{ color: hotRate >= 30 ? '#EF4444' : '#94A3B8' }}>
+                  {hotRate}%
+                </span>
+              </div>
+              <div className="h-2 rounded-full" style={{ background: '#E2E8F0' }}>
+                <div className="h-2 rounded-full transition-all" style={{ width: `${hotRate}%`, background: '#EF4444' }} />
+              </div>
+            </div>
           </div>
         </div>
 
