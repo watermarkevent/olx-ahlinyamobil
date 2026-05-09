@@ -108,13 +108,7 @@ export default function AdminPage() {
         style={{ background: 'var(--trusted-blue)' }}
       >
         <div className="flex items-center gap-2 mb-8">
-          <span className="text-white font-black text-3xl">OLX</span>
-          <span
-            className="text-sm font-bold px-2 py-0.5 rounded-full"
-            style={{ background: 'var(--certified-orange)', color: '#fff' }}
-          >
-            Mobbi
-          </span>
+          <span className="text-white font-black text-3xl">OLXmobbi</span>
           <span className="text-white font-bold text-lg ml-1">Admin</span>
         </div>
         <form onSubmit={handleLogin} className="w-full max-w-sm flex flex-col gap-4">
@@ -162,13 +156,7 @@ export default function AdminPage() {
       <div className="px-5 pt-6 pb-4" style={{ background: 'var(--trusted-blue)' }}>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-white font-black text-xl">OLX</span>
-            <span
-              className="text-xs font-bold px-2 py-0.5 rounded-full"
-              style={{ background: 'var(--certified-orange)', color: '#fff' }}
-            >
-              Mobbi
-            </span>
+            <span className="text-white font-black text-xl">OLXmobbi</span>
             <span className="text-white font-bold text-sm ml-1">Admin</span>
           </div>
           <button

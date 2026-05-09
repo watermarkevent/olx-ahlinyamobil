@@ -10,13 +10,7 @@ export default function Landing({ onStart }: Props) {
       {/* Header */}
       <div className="px-6 pt-10 pb-2">
         <div className="flex items-center gap-2 mb-1">
-          <span className="text-white font-black text-2xl tracking-tight">OLX</span>
-          <span
-            className="text-xs font-bold px-2 py-0.5 rounded-full"
-            style={{ background: 'var(--certified-orange)', color: '#fff' }}
-          >
-            Mobbi
-          </span>
+          <span className="text-white font-black text-2xl tracking-tight">OLXmobbi</span>
         </div>
         <p className="text-xs font-semibold" style={{ color: 'var(--confidence-blue)' }}>
           x GIIAS 2026

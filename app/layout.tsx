@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'OLX AhlinyaMobil — GIIAS 2026',
-  description: 'AI-powered personal car advisor by OLX Mobbi',
+  description: 'AI-powered personal car advisor by OLXmobbi',
 }
 
 export const viewport: Viewport = {

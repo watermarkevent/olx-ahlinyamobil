@@ -34,10 +34,10 @@ Ini hasil *OLX AhlinyaMobil* kamu di GIIAS 2026:
 
 ${carLine}${valuationLine}${recommendationBlock}${gapLine}
 
-Temui tim OLX Mobbi di *Booth Hall A*
+Temui tim OLXmobbi di *Booth Hall A*
 untuk penawaran trade-in terbaik! 🙌
 
-_OLX Mobbi × GIIAS 2026_`
+_OLXmobbi × GIIAS 2026_`
 
   const fonnteToken = process.env.FONNTE_TOKEN
   if (!fonnteToken) {

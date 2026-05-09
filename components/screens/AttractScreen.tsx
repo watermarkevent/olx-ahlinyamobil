@@ -59,7 +59,7 @@ export default function AttractScreen({ onTap }: Props) {
           Tap di mana saja
         </div>
         <p className="text-xs mt-2" style={{ color: '#7A9CC4' }}>
-          OLX Mobbi × GIIAS 2026
+          OLXmobbi × GIIAS 2026
         </p>
       </div>
     </div>

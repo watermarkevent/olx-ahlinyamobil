@@ -22,11 +22,7 @@ export default function TawarRekomendasiScreen({
     <div className="flex flex-col min-h-dvh bg-white">
       <div className="px-5 pt-8 pb-4" style={{ background: 'var(--trusted-blue)' }}>
         <div className="flex items-center gap-2 mb-3">
-          <span className="text-white font-black text-xl">OLX</span>
-          <span className="text-xs font-bold px-2 py-0.5 rounded-full"
-            style={{ background: 'var(--certified-orange)', color: '#fff' }}>
-            Mobbi
-          </span>
+          <span className="text-white font-black text-xl">OLXmobbi</span>
         </div>
         <h1 className="text-xl font-black text-white">
           Halo, {nama.split(' ')[0]}!
@@ -55,7 +51,7 @@ export default function TawarRekomendasiScreen({
           </div>
           <p className="text-xs mt-3 leading-relaxed" style={{ color: 'var(--mid-gray)' }}>
             Estimasi berdasarkan usia, kondisi, dan transmisi kendaraan.
-            Temui tim OLX Mobbi untuk penawaran resmi.
+            Temui tim OLXmobbi untuk penawaran resmi.
           </p>
         </div>
 

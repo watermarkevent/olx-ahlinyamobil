@@ -51,13 +51,7 @@ export default function Hasil({ hasil, onSendWA, waSending, waSent, onReset }: P
       {/* Header */}
       <div className="px-5 pt-8 pb-4" style={{ background: 'var(--trusted-blue)' }}>
         <div className="flex items-center gap-2 mb-3">
-          <span className="text-white font-black text-xl">OLX</span>
-          <span
-            className="text-xs font-bold px-2 py-0.5 rounded-full"
-            style={{ background: 'var(--certified-orange)', color: '#fff' }}
-          >
-            Mobbi
-          </span>
+          <span className="text-white font-black text-xl">OLXmobbi</span>
         </div>
         <h1 className="text-2xl font-black text-white">
           Halo, {hasil.nama.split(' ')[0]}!
@@ -88,7 +82,7 @@ export default function Hasil({ hasil, onSendWA, waSending, waSent, onReset }: P
             {hasil.tujuan === 'harga' && (
               <p className="text-xs mt-3 leading-relaxed" style={{ color: 'var(--mid-gray)' }}>
                 Harga ini adalah estimasi berdasarkan usia, kondisi, dan transmisi.
-                Temui tim OLX Mobbi untuk penawaran resmi.
+                Temui tim OLXmobbi untuk penawaran resmi.
               </p>
             )}
           </div>
@@ -155,7 +149,7 @@ export default function Hasil({ hasil, onSendWA, waSending, waSent, onReset }: P
 
         {/* CTA booth */}
         <div className="rounded-2xl p-5 text-center" style={{ background: 'var(--trusted-blue)' }}>
-          <p className="text-white font-black text-lg">Temui Tim OLX Mobbi</p>
+          <p className="text-white font-black text-lg">Temui Tim OLXmobbi</p>
           <p className="text-sm mt-1" style={{ color: '#B8C9E8' }}>di Booth Hall A &mdash; GIIAS 2026</p>
           <p className="text-sm mt-1 font-bold" style={{ color: 'var(--certified-orange)' }}>
             Penawaran trade-in terbaik menantimu!
@@ -182,7 +176,7 @@ export default function Hasil({ hasil, onSendWA, waSending, waSent, onReset }: P
         </button>
 
         <p className="text-center text-xs pb-6" style={{ color: 'var(--mid-gray)' }}>
-          OLX Mobbi x GIIAS 2026
+          OLXmobbi x GIIAS 2026
         </p>
       </div>
     </div>

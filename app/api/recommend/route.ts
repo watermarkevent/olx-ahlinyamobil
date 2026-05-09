@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
       model: 'claude-sonnet-4-20250514',
       max_tokens: 200,
       system:
-        'Kamu adalah advisor mobil OLX Mobbi yang friendly dan singkat. ' +
+        'Kamu adalah advisor mobil OLXmobbi yang friendly dan singkat. ' +
         'Tulis 2 kalimat pendek dalam Bahasa Indonesia yang menjelaskan kenapa rekomendasi ini cocok untuk user berdasarkan profilnya. ' +
         'Gunakan tone positif dan personal. Jangan sebut nama brand lain selain yang direkomendasikan.',
       messages: [
